@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  AudioRecorderView.swift
 //  DeciMeter
 //
 //  Created by Raphaël Payet on 23/07/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct AudioRecorderView: View {
     
     @StateObject private var noiseRecorder = NoiseRecorder()
     
@@ -23,8 +23,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct AudioRecorderView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        AudioRecorderView()
     }
 }
