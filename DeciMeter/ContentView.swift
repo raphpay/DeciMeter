@@ -14,11 +14,10 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Button {
-                noiseRecorder.startRecording()
+                noiseRecorder.isRecording ? noiseRecorder.stopRecording() : noiseRecorder.startRecording()
             } label: {
-                Text("Start recording")
+                Text(noiseRecorder.isRecording ? "Stop recording": "Start recording")
             }
-
         }
         .padding()
     }
