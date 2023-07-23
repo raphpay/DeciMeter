@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		868C084B2A6D597700763579 /* DeciMeterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C084A2A6D597700763579 /* DeciMeterApp.swift */; };
-		868C084D2A6D597700763579 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C084C2A6D597700763579 /* ContentView.swift */; };
+		868C084D2A6D597700763579 /* AudioRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C084C2A6D597700763579 /* AudioRecorderView.swift */; };
 		868C084F2A6D597900763579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868C084E2A6D597900763579 /* Assets.xcassets */; };
 		868C08522A6D597900763579 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868C08512A6D597900763579 /* Preview Assets.xcassets */; };
 		868C085C2A6D597900763579 /* DeciMeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C085B2A6D597900763579 /* DeciMeterTests.swift */; };
 		868C08662A6D597900763579 /* DeciMeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C08652A6D597900763579 /* DeciMeterUITests.swift */; };
 		868C08682A6D597900763579 /* DeciMeterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C08672A6D597900763579 /* DeciMeterUITestsLaunchTests.swift */; };
 		868C08752A6D5A0900763579 /* NoiseRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C08742A6D5A0900763579 /* NoiseRecorder.swift */; };
+		868C087B2A6D5F8200763579 /* AudioRecorderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C087A2A6D5F8200763579 /* AudioRecorderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		868C08472A6D597700763579 /* DeciMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeciMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868C084A2A6D597700763579 /* DeciMeterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeciMeterApp.swift; sourceTree = "<group>"; };
-		868C084C2A6D597700763579 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		868C084C2A6D597700763579 /* AudioRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderView.swift; sourceTree = "<group>"; };
 		868C084E2A6D597900763579 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		868C08512A6D597900763579 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		868C08572A6D597900763579 /* DeciMeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeciMeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +47,7 @@
 		868C08652A6D597900763579 /* DeciMeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeciMeterUITests.swift; sourceTree = "<group>"; };
 		868C08672A6D597900763579 /* DeciMeterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeciMeterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		868C08742A6D5A0900763579 /* NoiseRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseRecorder.swift; sourceTree = "<group>"; };
+		868C087A2A6D5F8200763579 /* AudioRecorderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				868C084A2A6D597700763579 /* DeciMeterApp.swift */,
-				868C084C2A6D597700763579 /* ContentView.swift */,
+				868C084C2A6D597700763579 /* AudioRecorderView.swift */,
 				868C08742A6D5A0900763579 /* NoiseRecorder.swift */,
+				868C087A2A6D5F8200763579 /* AudioRecorderViewModel.swift */,
 				868C084E2A6D597900763579 /* Assets.xcassets */,
 				868C08502A6D597900763579 /* Preview Content */,
 			);
@@ -260,9 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				868C084D2A6D597700763579 /* ContentView.swift in Sources */,
+				868C084D2A6D597700763579 /* AudioRecorderView.swift in Sources */,
 				868C08752A6D5A0900763579 /* NoiseRecorder.swift in Sources */,
 				868C084B2A6D597700763579 /* DeciMeterApp.swift in Sources */,
+				868C087B2A6D5F8200763579 /* AudioRecorderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
