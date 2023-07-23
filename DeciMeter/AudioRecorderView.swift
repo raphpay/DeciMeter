@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct AudioRecorderView: View {
+    @StateObject private var viewModel = AudioRecorderViewModel()
     @StateObject private var noiseRecorder = NoiseRecorder()
 
     var body: some View {
         ZStack {
             // Background color based on sound level
             Color(red: 0.5, green: 0.8, blue: 0.9)
-                .opacity(getOpacity())
+                .opacity(viewModel.getOpacity(for: noiseRecorder.decibels))
                 .edgesIgnoringSafeArea(.all)
 
             VStack {
@@ -26,8 +27,7 @@ struct AudioRecorderView: View {
                 Circle()
                     .frame(width: 20, height: 20)
                     .foregroundColor(.red)
-                    .offset(x: 0, y: CGFloat(getAmplitude()))
-                    .animation(.easeInOut(duration: 0.1))
+                    .offset(x: 0, y: CGFloat(viewModel.getAmplitude(for: noiseRecorder.decibels)))
 
                 Spacer()
 
@@ -48,27 +48,6 @@ struct AudioRecorderView: View {
                 .padding()
             }
         }
-    }
-
-    // Calculate opacity based on decibels (for background color)
-    private func getOpacity() -> Double {
-        let maxOpacity: Double = 0.8
-        let minDb: Double = -60.0
-        let maxDb: Double = 0.0
-
-        let normalizedValue = (noiseRecorder.decibels - minDb) / (maxDb - minDb)
-        let opacity = max(0, min(normalizedValue, 1)) * maxOpacity
-        return opacity
-    }
-
-    // Calculate amplitude based on decibels (for circle animation)
-    private func getAmplitude() -> Double {
-        let maxAmplitude: Double = 50.0
-        let minDb: Double = -120.0
-        let maxDb: Double = 0.0
-
-        let normalizedValue = (noiseRecorder.decibels - minDb) / (maxDb - minDb)
-        return maxAmplitude * max(0, min(normalizedValue, 1))
     }
 }
 
