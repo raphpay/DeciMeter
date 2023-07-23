@@ -10,7 +10,7 @@ import AVFoundation
 
 class NoiseRecorder: NSObject, ObservableObject {
     @Published var isRecording = false
-    @Published var decibels: Double = -120.0
+    @Published var decibels: Double = 0.0
     private var audioEngine: AVAudioEngine!
     private var audioFormat: AVAudioFormat!
     private var bufferObserver: NSObjectProtocol!
