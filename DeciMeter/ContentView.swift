@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject private var noiseRecorder = NoiseRecorder()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button {
+                noiseRecorder.isRecording ? noiseRecorder.stopRecording() : noiseRecorder.startRecording()
+            } label: {
+                Text(noiseRecorder.isRecording ? "Stop recording": "Start recording")
+            }
         }
         .padding()
     }

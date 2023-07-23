@@ -14,6 +14,7 @@
 		868C085C2A6D597900763579 /* DeciMeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C085B2A6D597900763579 /* DeciMeterTests.swift */; };
 		868C08662A6D597900763579 /* DeciMeterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C08652A6D597900763579 /* DeciMeterUITests.swift */; };
 		868C08682A6D597900763579 /* DeciMeterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C08672A6D597900763579 /* DeciMeterUITestsLaunchTests.swift */; };
+		868C08752A6D5A0900763579 /* NoiseRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868C08742A6D5A0900763579 /* NoiseRecorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		868C08612A6D597900763579 /* DeciMeterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeciMeterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		868C08652A6D597900763579 /* DeciMeterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeciMeterUITests.swift; sourceTree = "<group>"; };
 		868C08672A6D597900763579 /* DeciMeterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeciMeterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		868C08742A6D5A0900763579 /* NoiseRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoiseRecorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				868C084A2A6D597700763579 /* DeciMeterApp.swift */,
 				868C084C2A6D597700763579 /* ContentView.swift */,
+				868C08742A6D5A0900763579 /* NoiseRecorder.swift */,
 				868C084E2A6D597900763579 /* Assets.xcassets */,
 				868C08502A6D597900763579 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				868C084D2A6D597700763579 /* ContentView.swift in Sources */,
+				868C08752A6D5A0900763579 /* NoiseRecorder.swift in Sources */,
 				868C084B2A6D597700763579 /* DeciMeterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,11 +424,13 @@
 				DEVELOPMENT_TEAM = N96T5K2D2H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We want to record your surroundings to measure the current sound level.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,11 +455,13 @@
 				DEVELOPMENT_TEAM = N96T5K2D2H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We want to record your surroundings to measure the current sound level.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
